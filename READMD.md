@@ -28,6 +28,8 @@ with class name folder
 
 ## Runing the system
 
+Edit folder paths in annotate.py ( main function )
+
 ```
 python annotate.py
 ```
