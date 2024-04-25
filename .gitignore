@@ -1,0 +1,10 @@
+*.pyc
+*.ipynb
+__pycache__/
+.vscode/*
+.mypy_cache/
+
+*.ipynb_checkpoints
+configs/
+datasets/
+datasets/raw_dataset/*
