@@ -1,9 +1,9 @@
 ## Semi-Automated Annotation
 
-This is expermental project to assit annotation process with image-guided search from OWL-VIT model.
+This is expermental project to assit annotation process with **image-guided search** from OWL-VIT model.
 
-[OWL-VIT](https://huggingface.co/docs/transformers/en/model_doc/owlvit)
-[Paper](https://arxiv.org/abs/2205.06230)
+- [OWL-VIT](https://huggingface.co/docs/transformers/en/model_doc/owlvit)
+- [Paper](https://arxiv.org/abs/2205.06230)
 
 ## Data set up
 
@@ -14,16 +14,16 @@ with class name folder
         - class_name/
             - object_img1.jpg
             - object_img2.jpg
-                  .
-                  .
+            .
+            .
 
 2. Create raw_dataset folder under datasets folder and put raw/unlabeled images 
     - datasets/
         - raw_dataset/
             - raw_img1.jpg
             - raw_img2.jpg 
-                  .
-                  .
+            .
+            .
 
 
 ## Runing the system
