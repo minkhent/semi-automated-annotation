@@ -1,11 +1,13 @@
-## Semi-Automated Annotation
+## Semi-Automated Annotation 
 
-This is expermental project to assit annotation process with **image-guided search** from OWL-VIT model.
+### Auto annotation with minimal human effort
+
+This is expermental project to assit annotation process for object dection task with **image-guided search** from OWL-VIT model.
 
 - [OWL-VIT](https://huggingface.co/docs/transformers/en/model_doc/owlvit)
 - [Paper](https://arxiv.org/abs/2205.06230)
 
-## Data set up
+### Data set up
 
 1. Crop objects from image ( ~ 10 images) and put under the object_patches folder
 with class name folder 
@@ -26,10 +28,14 @@ with class name folder
             .
 
 
-## Runing the system
+### Runing the system
 
 Edit folder paths in annotate.py ( main function )
 
 ```
 python annotate.py
 ```
+
+### Experiments
+
+   - All experiments can be found in exp/runs/* folders
