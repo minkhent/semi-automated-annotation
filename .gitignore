@@ -6,5 +6,4 @@ __pycache__/
 
 *.ipynb_checkpoints
 configs/
-datasets/
-datasets/raw_dataset/*
+datasets/raw_datasets/*

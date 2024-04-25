@@ -34,7 +34,7 @@ def inference_batch(image, query_images):
 def main():
 
     # RAW images
-    raw_images = glob("datasets/raw_dataset/*.jpg")
+    raw_images = glob("datasets/kangroo_raw_data/*.jpg")
 
     # Query images
     query_paths = glob("object_patches/kangroo/*.jpg")
