@@ -2,10 +2,12 @@
 
 ### Auto annotation with minimal human effort
 
-This is expermental project to assit annotation process for object dection task with **image-guided search** from OWL-VIT model.
+This is expermental project to assit annotation process for object dection task with [**image-guided search**](https://huggingface.co/spaces/johko/image-guided-owlvit) from OWL-VIT model.
 
 - [OWL-VIT](https://huggingface.co/docs/transformers/en/model_doc/owlvit)
 - [Paper](https://arxiv.org/abs/2205.06230)
+
+![System design](assets/semi-auto-2.jpg)
 
 ### Data set up
 
