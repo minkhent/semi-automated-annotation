@@ -1,4 +1,4 @@
-## Semi-Automated Annotation 
+## Semi-Automated Annotation ( In-progress project)
 
 ### Auto annotation with minimal human effort
 
