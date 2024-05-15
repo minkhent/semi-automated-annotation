@@ -6,7 +6,7 @@ from glob import glob
 from PIL import Image
 from tqdm import tqdm
 from model import load_model
-from utils import remove_duplicate_boxes, save_prediction
+from utils import remove_duplicate_boxes, save_prediction,save_annotation
 
 device = torch.device("cuda:0" if torch.cuda.is_available() 
                       else "cpu")
@@ -54,15 +54,15 @@ def main():
     os.makedirs(save_dir)
 
     with tqdm(total=len(raw_images)) as pbar:
-        for raw_image in raw_images:
-            raw_image = Image.fromarray(np.uint8(Image.open(raw_image))).convert("RGB")
+        for raw_image_path in raw_images:
+            raw_image = Image.fromarray(np.uint8(Image.open(raw_image_path))).convert("RGB")
             pred_results = inference_batch(raw_image, query_images , device)
 
             unique_boxes = remove_duplicate_boxes(pred_results)
             if len(unique_boxes):
-                print(unique_boxes)
                 save_name = str(round(time.time() * 1000))
                 save_prediction(unique_boxes, raw_image, save_name, save_dir)
+                save_annotation(unique_boxes ,raw_image, raw_image_path , "kangaroo")
             pbar.update(1)
 
 
