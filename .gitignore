@@ -9,4 +9,3 @@ configs/
 datasets/raw_datasets/*
 annotate_v2.py
 inference.py
-datasets/annotated_dataset/*
