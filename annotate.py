@@ -39,7 +39,7 @@ def inference_batch(image, query_images , device):
 def main():
 
     # RAW images
-    raw_images = glob("datasets/kangroo_raw_data/*.jpg")
+    raw_images = glob("datasets/kangroo_raw_data/*.jpg")[:2]
 
     # Query images
     query_paths = glob("object_patches/kangroo/*.jpg")
@@ -60,6 +60,7 @@ def main():
 
             unique_boxes = remove_duplicate_boxes(pred_results)
             if len(unique_boxes):
+                print(unique_boxes)
                 save_name = str(round(time.time() * 1000))
                 save_prediction(unique_boxes, raw_image, save_name, save_dir)
             pbar.update(1)

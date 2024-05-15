@@ -7,3 +7,5 @@ __pycache__/
 *.ipynb_checkpoints
 configs/
 datasets/raw_datasets/*
+annotate_v2.py
+inference.py
