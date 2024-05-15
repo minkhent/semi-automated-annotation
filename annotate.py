@@ -39,7 +39,7 @@ def inference_batch(image, query_images , device):
 def main():
 
     # RAW images
-    raw_images = glob("datasets/kangroo_raw_data/*.jpg")[:2]
+    raw_images = glob("datasets/kangroo_raw_data/*.jpg")
 
     # Query images
     query_paths = glob("object_patches/kangroo/*.jpg")
