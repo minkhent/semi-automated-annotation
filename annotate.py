@@ -51,6 +51,8 @@ def main():
 
     created_time = strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     save_dir = f"exp/runs/{created_time}"
+    annotation_save_dir = "datasets/annotated_dataset"
+    os.makedirs(annotation_save_dir)
     os.makedirs(save_dir)
 
     with tqdm(total=len(raw_images)) as pbar:
